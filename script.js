@@ -1,6 +1,13 @@
 async function loadPosts() {
   const response = await fetch('posts.json');
   const posts = await response.json();
+  const randomBtn = document.getElementById('random-btn');
+if (randomBtn) {
+  randomBtn.onclick = () => {
+    const randomPost = posts[Math.floor(Math.random() * posts.length)];
+    window.location.href = `post.html?id=${randomPost.id}`;
+  };
+}
 
   const container = document.getElementById('posts-container');
   if (!container) return;
@@ -42,3 +49,4 @@ async function loadSinglePost() {
 
 loadPosts();
 loadSinglePost();
+
