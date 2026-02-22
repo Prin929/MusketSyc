@@ -10,5 +10,12 @@
     "title": "Campus Thoughts",
     "date": "2026-02-21",
     "content": "Why do lecturers say 'briefly' and then talk for 2 hours?\n\nThis is oppression."
-  }
+  },
+  {
+  "id": 3,
+  "title": "New Drop Title",
+  "date": "2026-02-23",
+  "content": "Your text here.\n\nLine breaks with \\n"
+}
 ]
+
